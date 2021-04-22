@@ -1,0 +1,71 @@
+#game{
+  display: none;
+ }
+
+body{
+background:cornflowerblue;
+
+}
+
+.rank{
+  margin: 60px;
+  margin-bottom: 0;
+}
+
+table{
+  margin: 0px auto ;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  font-size: 120px !important;
+}
+
+
+table td{
+width: 33.33%;
+height: 150px !important;
+cursor: pointer !important;
+}
+
+td:hover{
+  background:  rgba(224, 250, 246, 0.2);
+}
+
+.border-top-border-bottom{
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.border-left-border-rigth{
+  
+  border-left: 7px solid black;
+  border-right: 7px solid black;
+}
+
+#button-player-nobody-win{
+  background: green !important;
+}
+
+a h6{ 
+  color: black !important;
+  position: absolute !important;
+  right: 10px;
+  bottom: 10px;
+
+}
+
+
+
+a h6:hover{
+  color: #fff !important;
+
+}
+
+img{
+  width: 60px !important;
+  height: 50px !important;
+  position: absolute !important;
+  bottom: 45px;
+  right: 10px
+}
+

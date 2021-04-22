@@ -1,0 +1,115 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/jogoDaVelha.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+  <title>Jogo Da Velha</title>
+</head>
+<body>
+
+  <div id="game" class="container-fluid">
+
+     <div class="row rank">
+        <div class="col-sm">
+           <h1><span id="span_player_one"></span><span id="span_player_one_score" class="badge badge-secondary">0</span></h1>
+        </div>
+        <div class="col-sm text-center">
+          <!-- Button trigger modal -->
+          <button style="position: relative; top: -40px;" type="button" class="btn btn-danger" data-toggle="modal" data-target="#resultGame">
+            Informar Vencedor!!!
+          </button>
+        </div>
+
+        <div class="col-sm text-right">
+          <h1><span id="span_player_two_score" class="badge badge-secondary">0</span><span id="span_player_two"></span></h1>
+        </div>
+      </div>
+
+     <div class="row">
+
+      <table class="center display-1">
+        <tr>
+          <td></td>
+          <td class="border-left-border-rigth"></td>
+          <td></td>
+        </tr>
+        
+        <tr">
+          <td class="border-top-border-bottom"></td>
+          <td class="border-top-border-bottom border-left-border-rigth"></td>
+          <td class="border-top-border-bottom"></td>
+        </tr>
+        
+        <tr>
+          <td></td>
+          <td class="border-left-border-rigth"></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+</div>
+  
+<!-- Modal nome dos jogadores -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Jogo Da Velha </h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label>Jogador 1</label>
+            <input type="email" class="form-control" placeholder="Qual é seu nome?" name="input-jogador1">
+          </div>
+         
+          <div class="form-group">
+            <label>Jogador 2</label>
+            <input type="email" class="form-control" placeholder="Qual é seu nome?" name="input-jogador2">
+          </div>
+         
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="button_start_game" type="button" class="btn btn-primary">Salvar e Iniciar</button>
+      </div>
+    </div>
+   
+  </div>
+  
+</div>
+
+<!-- Modal Resultado final -->
+<div class="modal fade" id="resultGame" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resultGameLabel">Resultado Final</h5>
+      </div>
+      
+      <div class="modal-footer">
+          <div class="col-sm">
+            <button id="button-player-one-win" type="button" class="btn btn-primary btn-lg btn-block">Jogador 1</button>
+          </div>
+          <div class="col-sm">
+            <button id="button-player-nobody-win" type="button" class="btn btn-primary btn-lg btn-block">Velha</button>
+          </div>
+          <div class="col-sm">
+        <button id="button-player-two-win" type="button" class="btn btn-danger btn-lg btn-block">Jogador 2</button>
+      </div>
+      </div>
+    </div>
+   
+  </div>
+  
+</div>
+
+
+  <a target="_blank" href="https://www.instagram.com/biielpereira9/"><h6>Desenvolvido Por: Gabriel Pereira</h6></a>
+  <img src="./img/definitiva.jpeg" alt="">
+</body>
+
+</html>
